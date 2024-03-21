@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to GMC Shop</title>
+    <style>
+        body {
+           font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to GMC Shop</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>$10.00</td>
+                    <td>2</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>$15.00</td>
+                    <td>1</td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>Product 3</td>
+                    <td>$20.00</td>
+                    <td>3</td>
+                    <td>$60.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button class="btn" onclick="applyCoupon()">Apply Coupon</button>
+            <button class="btn" onclick="removeItem()">Remove Item</button>
+            <button class="btn" onclick="clearCart()">Clear Cart</button>
+            <button class="btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        function applyCoupon() {
+            // Add logic to apply coupon
+            alert('Coupon applied!');
+        }
+
+        function removeItem() {
+            // Add logic to remove item
+            alert('Item removed!');
+        }
+
+        function clearCart() {
+            // Add logic to clear cart
+            alert('Cart cleared!');
+        }
+
+        function checkout() {
+            // Add logic to proceed to checkout
+            alert('Proceeding to checkout...');
+        }
+    </script>
+</body>
+</html>
